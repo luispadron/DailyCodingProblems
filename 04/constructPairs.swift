@@ -28,6 +28,6 @@ func cdr<T>(_ pair: (first: T, second: T)) -> T {
 }
 
 let pair = cons(100, 200)
-car(pair)
-cdr(pair)
+car(pair) // -> 100
+cdr(pair) // -> 200
 
