@@ -6,6 +6,12 @@ Problem solutions for some daily coding problems I either find online or get fro
 - [First missing positive](03/firstMissingPositive.swift)
 - [Construct pairs](04/constructPairs.swift)
 
+## Write-ups
+
+Check out some of the articles I've written which include these problems:
+
+- [Coding Challenge - Week 1](https://medium.com/@LuisPadron/coding-challenges-week-1-c1abdcc2cbcf)
+
 ## Playground
 
 Take a look at the Swift playground which has some of the problems,
