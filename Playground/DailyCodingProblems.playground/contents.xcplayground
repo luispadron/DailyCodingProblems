@@ -6,5 +6,6 @@
         <page name='FirstMissingPositive'/>
         <page name='ConstructPairs'/>
         <page name='IsValidParenthesis'/>
+        <page name='DecodeString'/>
     </pages>
 </playground>

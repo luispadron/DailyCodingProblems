@@ -7,6 +7,7 @@ Problem solutions for some daily coding problems I either find online or get fro
 - [Construct pairs](04/constructPairs.swift)
 - [XOR linked list](05/xor_linked_list.cpp)
 - [Is valid parenthesis](06/isValidParenthesis.swift)
+- [Count decode string](07/countDecodeString.swift)
 
 ## Write-ups
 
