@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos' executeOnSourceChanges='false'>
     <pages>
-        <page name='Problem1'/>
-        <page name='Problem2'/>
-        <page name='Problem4'/>
-        <page name='Problem 5'/>
+        <page name='TwoSum'/>
+        <page name='ExclusiveProduct'/>
+        <page name='FirstMissingPositive'/>
+        <page name='ConstructPairs'/>
+        <page name='IsValidParenthesis'/>
     </pages>
 </playground>

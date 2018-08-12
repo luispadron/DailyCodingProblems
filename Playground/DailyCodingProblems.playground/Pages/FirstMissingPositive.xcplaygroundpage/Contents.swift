@@ -1,4 +1,4 @@
-//: Problem - 4
+//: First missing positive
 //
 // This problem was asked by Stripe.
 //

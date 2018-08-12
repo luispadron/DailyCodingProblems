@@ -6,6 +6,7 @@ Problem solutions for some daily coding problems I either find online or get fro
 - [First missing positive](03/firstMissingPositive.swift)
 - [Construct pairs](04/constructPairs.swift)
 - [XOR linked list](05/xor_linked_list.cpp)
+- [Is valid parenthesis](06/isValidParenthesis.swift)
 
 ## Write-ups
 

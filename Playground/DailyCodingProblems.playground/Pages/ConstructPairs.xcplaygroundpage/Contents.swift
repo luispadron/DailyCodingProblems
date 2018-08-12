@@ -1,4 +1,4 @@
-//: Problem - 5
+//: Construct Pairs
 //
 // This problem was asked by Jane Street.
 //
