@@ -8,6 +8,8 @@ Problem solutions for some daily coding problems I either find online or get fro
 - [XOR linked list](05/xor_linked_list.cpp)
 - [Is valid parenthesis](06/isValidParenthesis.swift)
 - [Count decode string](07/countDecodeString.swift)
+- [Merge K sorted lists](08/mergeKSortedLists.swift)
+- [Count Univalued subtrees](09/countUnivalSubtrees.swift)
 
 ## Write-ups
 

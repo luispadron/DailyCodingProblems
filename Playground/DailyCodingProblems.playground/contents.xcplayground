@@ -7,5 +7,6 @@
         <page name='ConstructPairs'/>
         <page name='IsValidParenthesis'/>
         <page name='DecodeString'/>
+        <page name='MergeKSortedLists'/>
     </pages>
 </playground>
