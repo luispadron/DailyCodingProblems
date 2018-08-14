@@ -27,7 +27,7 @@
 
 /// Node type for use with tree
 final class Node<T: Equatable> {
-    var value: T?
+    var value: T
     var left: Node?
     var right: Node?
 
@@ -45,7 +45,7 @@ extension Node {
     }
 
     private func preOrder(startingAt root: Node) {
-        print(root.value ?? "nil")
+        print(root.value)
         if let left = root.left { preOrder(startingAt: left) }
         if let right = root.right { preOrder(startingAt: right) }
     }
@@ -71,25 +71,24 @@ root.printPreOrder()
 
 extension Node {
     func countUnival() -> Int {
-        return Node.countUnival(startingAt: self)
+        var count = 0
+        Node.countUnival(startingAt: self, count: &count)
+        return count
     }
 
-    private static func countUnival(startingAt root: Node?) -> Int {
-        guard let root = root, let rootVal = root.value else { return 0 }
-        // Base case
-        if root.left == nil && root.right == nil { return 1 }
+    private static func countUnival(startingAt root: Node?, count: inout Int) -> Bool {
+        guard let root = root else { return true }
 
-        let childCounts = countUnival(startingAt: root.left) + countUnival(startingAt: root.right)
+        let isLeftUnival = countUnival(startingAt: root.left, count: &count)
+        let isRightUnival = countUnival(startingAt: root.right, count: &count)
 
-        // Check if current root is a unival subtree
-        if let leftVal = root.left?.value, let rightVal = root.right?.value {
-            return childCounts + (leftVal == rootVal && rightVal == rootVal ? 1 : 0)
-        } else if let leftVal = root.left?.value {
-            return childCounts + (leftVal == rootVal ? 1 : 0)
-        } else if let rightVal = root.right?.value {
-            return childCounts + (rightVal == rootVal ? 1 : 0)
+        if isLeftUnival && isRightUnival {
+            if let leftVal = root.left?.value, leftVal != root.value { return false }
+            if let rightVal = root.right?.value, rightVal != root.value { return false }
+            count += 1
+            return true
         } else {
-            return childCounts
+            return false
         }
     }
 }
@@ -117,5 +116,22 @@ root2.left?.right = Node<Int>(value: 0)
 root2.left?.right?.right = Node<Int>(value: 1)
 root2.countUnival() // -> 3
 
+
+//
+//            5
+//          /   \
+//         5      5
+//        /\       \
+//       5  1        5
+//
+// Result -> 4
+
+let root3 = Node<Int>(value: 5)
+root3.right = Node<Int>(value: 5)
+root3.right?.right = Node<Int>(value: 5)
+root3.left = Node<Int>(value: 5)
+root3.left?.left = Node<Int>(value: 5)
+root3.left?.right = Node<Int>(value: 1)
+root3.countUnival()
 
 
