@@ -10,6 +10,8 @@ Problem solutions for some daily coding problems I either find online or get fro
 - [Count decode string](07/countDecodeString.swift)
 - [Merge K sorted lists](08/mergeKSortedLists.swift)
 - [Count Univalued subtrees](09/countUnivalSubtrees.swift)
+- [Task scheduler](10/taskScheduler.swift)
+- [Max NonAdjacent sum](11/maxNonAdjacentSum.swift)
 
 ## Write-ups
 

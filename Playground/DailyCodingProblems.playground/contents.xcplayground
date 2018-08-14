@@ -8,5 +8,8 @@
         <page name='IsValidParenthesis'/>
         <page name='DecodeString'/>
         <page name='MergeKSortedLists'/>
+        <page name='CountUnivalSubtrees'/>
+        <page name='TaskScheduler'/>
+        <page name='MaxNonAdjacentSum'/>
     </pages>
 </playground>
