@@ -11,5 +11,7 @@
         <page name='CountUnivalSubtrees'/>
         <page name='TaskScheduler'/>
         <page name='MaxNonAdjacentSum'/>
+        <page name='MaxContiguousSum'/>
+        <page name='AllPossibleSubsets'/>
     </pages>
 </playground>
